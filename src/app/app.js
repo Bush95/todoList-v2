@@ -47,7 +47,7 @@ const ToDo = React.createClass({
     newItem.id = this.state.id;
     newItem.checked = false;
     newItem.text = text;
-    let items = [...this.state.items, newItem];
+    const items = [...this.state.items, newItem];
     this.setState({
       items: items,
       id: this.state.id + 1

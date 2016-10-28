@@ -3,8 +3,8 @@ import ReactDom from 'react-dom';
 
 const ToDoFooter = React.createClass({
   render: function () {
-    let itemsUnchecked = this.props.items.filter(item => item.checked === false);
-    let itemsCheckedL = this.props.items.filter(item => item.checked === true).length;
+    const itemsUnchecked = this.props.items.filter(item => item.checked === false);
+    const itemsCheckedL = this.props.items.filter(item => item.checked === true).length;
     return (
       <footer className="todo__footer">
         {itemsUnchecked.length > 0 ?
