@@ -49,7 +49,7 @@ module.exports = {
       'process.env':{
         'NODE_ENV': JSON.stringify('production')
       }}),
-      new ExtractTextPlugin("app.css"),
+      new ExtractTextPlugin("app.min.css"),
       new webpack.optimize.UglifyJsPlugin({
         compress: { warnings: true },
         include: /\.min\.js$/
