@@ -41,6 +41,6 @@ module.exports = {
         ]
     },
     plugins: [
-      new ExtractTextPlugin("app.css")
+      new ExtractTextPlugin("app.min.css")
     ]
 };
